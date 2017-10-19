@@ -50,6 +50,14 @@ public class Bird {
         bounds.setPosition(pos.x,pos.y);
     }
 
+    public void updateAnimation(float dt){
+        birdAnimation.update(dt);
+    }
+
+    public void updatePosY(double y){
+        pos.y += y;
+    }
+
     public void jump(){
         vel.y=250;
         flap.play(0.25f);

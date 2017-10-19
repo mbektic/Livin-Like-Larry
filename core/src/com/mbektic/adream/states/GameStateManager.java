@@ -13,6 +13,8 @@ public class GameStateManager {
         resume = true;
     }
 
+    public String getState(){return states.peek().stateName;}
+
     public void push(State state){
         states.push(state);
     }
