@@ -25,7 +25,7 @@ public class Tube {
         posTopTube = new Vector2(x, rand.nextInt(FLUCTUATION)+ TUBE_GAP + LOWEST_OPENING);
         posBotTube = new Vector2(x, posTopTube.y - TUBE_GAP - botTube.getHeight());
 
-        boundsTop = new Rectangle(posTopTube.x+10, posTopTube.y, topTube.getWidth()-20, topTube.getHeight() +200);
+        boundsTop = new Rectangle(posTopTube.x+10, posTopTube.y, topTube.getWidth()-20, topTube.getHeight() + 400);
         boundsBot = new Rectangle(posBotTube.x+10, posBotTube.y, botTube.getWidth()-20, botTube.getHeight());
     }
 
